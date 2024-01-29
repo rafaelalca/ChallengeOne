@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color: #0A3871;
+    --terciary-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+}
+
+#LogoAlura {
+    margin: 2rem
+}
+
+.main {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    
+}
+
+.section__texto__descriptografado {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#input {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    border: transparent;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    background: transparent;
+    line-height: 200%;
+    width: 100%;
+    height: 90%;
+    resize: none;
+}
+
+#input::placeholder {
+    color: #0a3871d2;
+    
+}
+
+.div__aviso__botoes {
+    padding-top: 2%;
+}
+
+.paragrafo__aviso {
+    font-size: 0.85rem;
+    padding-bottom: 2%;
+}
+
+.div__texto__descriptografado__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.btn-blue {
+    background-color: var(--secondary-color);
+    border-style: solid;
+    border-color: black;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    color: var(--terciary-color);
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: var(--primary-color);
+    border-style: solid;
+    border-color: var(--secondary-color);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.mensagens {
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 33.5%;
+    min-width: 33.5%;
+    height: 100%;
+
+}
+
+.mensagens__div {
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1.5%;
+    align-items: center;
+    background-color: var(--terciary-color);
+    border-radius: 32px;
+    height: 100%;
+
+}
+
+.mensagens__div__imagem {
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+
+}
+
+.mensagem__div__titulo {
+    text-align:center;
+    width: 336px;
+    height: 58px;
+
+}
+
+.mensagens__div__texto {
+    text-align: center;
+    width: 336px;
+    height: 68px;
+    margin-top: 10px;
+    color: rgba(73, 80, 87, 1);
+
+}
+
+.resposta {
+    padding: 2rem;
+    text-align: left;
+
+}
+
+#btn-copiar {
+    background-color: var(--primary-color);
+    border-style: solid;
+    border-color: var(--secondary-color);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+
+a {
+    color: black;
+}
+
+@media (max-width: 1800px) {
+    footer {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .main {
+        margin-bottom: 9%;
+    }
+    footer {
+        padding: 2.3rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 11%;
+        height: 67%;
+    }
+
+    .section__texto__descriptografado {
+        box-sizing: border-box;
+        height: 80%;
+        min-width: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mensagens {
+        justify-content: center;
+        box-sizing: border-box;
+        max-width: 33.5%;
+        min-width: 33.5%;
+        height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 5rem;
+        padding: 2.3rem;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 13%;
+        height: 66%;
+    }
+
+    .section__texto__descriptografado {
+        box-sizing: border-box;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mensagens {
+        justify-content: center;
+        max-width: 90%;
+        min-width: 74%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mensagens__div {
+        border: solid;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 8%;
+        height: 90%;
+    }
+    
+    .mensagens__div__imagem {
+        display: none;
+        height: 0%;
+    }
+
+    .mensagem__div__titulo {
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    .mensagens__div__texto {
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 5rem;
+        padding: 2.3rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    footer {
+        margin-top: 5rem;
+        padding: 2.3rem;
+    }
+}
+
+@media (max-width: 975px) {
+
+    .main {
+        margin: 4%;
+        box-sizing: content-box;
+        padding-bottom: 0.9rem;
+        margin-bottom: 14%;
+    }
+
+    .section__texto__descriptografado{
+        box-sizing: content-box;
+        width: 80%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .div__texto__descriptografado__botoes {
+        flex-direction: column;
+    }
+
+    #input {
+        font-size: 1.3rem;
+        height: 100%;
+        resize: none;
+    }
+
+    #input::placeholder {
+        font-size: 1.3rem;
+    }
+
+    .paragrafo__aviso {
+        font-size: 0.75rem;
+        padding-bottom: 2%;
+    }
+
+    .btn-blue {
+        width: 14rem;
+        height: 3rem;
+    }
+    
+    .btn-white {
+        width: 14rem;
+        height: 3rem;
+    }
+
+    .mensagens {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mensagens__div {
+        border: solid;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0%;
+        height: 100%;
+    }
+
+    .mensagem__div__titulo {
+        font-size: 1.3rem;
+    }
+    
+    .mensagens__div__texto {
+        font-size: 1.1rem;
+    }
+
+    #btn-copiar {
+        width: 14rem;
+        height: 3rem;
+        border-radius: 24px;
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    footer {
+        margin-top: 3rem;
+        padding: 1.7rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    footer {
+        margin-top: 3rem;
+        padding: 2.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .main {
+        margin-bottom: 16%;
+    }
+
+    #input {
+        font-size: 1rem;
+        height: 100%;
+        resize: none;
+    }
+
+    #input::placeholder {
+        font-size: 1rem;
+    }
+
+    .paragrafo__aviso {
+        font-size: 0.75rem;
+        padding-bottom: 4%;
+    }
+
+    .btn-blue {
+        margin-left: 15%;
+        width: 12rem;
+        height: 2.5rem;
+    }
+    
+    .btn-white {
+        margin-left: 15%;
+        width: 12rem;
+        height: 2.5rem;
+    }
+
+    #btn-copiar {
+        width: 12rem;
+        height: 2rem;
+        border-radius: 24px;
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    .mensagens__div {
+        margin: 3%;
+    }
+
+    .mensagem__div__titulo {
+        font-size: 1.3rem;
+    }
+    
+    .mensagens__div__texto {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding-top: 5.2%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .main {
+        margin-bottom: 18%;
+    }
+
+    #input {
+        font-size: 1rem;
+        height: 100%;
+        resize: none;
+    }
+
+    #input::placeholder {
+        font-size: 1rem;
+    }
+
+    .paragrafo__aviso {
+        font-size: 0.75rem;
+        padding-bottom: 4%;
+    }
+
+    .btn-blue {
+        margin-left: 15%;
+        width: 12rem;
+        height: 2.5rem;
+    }
+    
+    .btn-white {
+        margin-left: 15%;
+        width: 12rem;
+        height: 2.5rem;
+    }
+
+    .mensagens__div {
+        margin: 3%;
+    }
+
+    .mensagem__div__titulo {
+        font-size: 1.3rem;
+    }
+    
+    .mensagens__div__texto {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 665px) {
+
+    .main {
+        margin-bottom: 24%;
+    }
+    
+}
+@media (max-width: 550px) {
+
+    .main {
+        margin-bottom: 19%;
+    }
+}
+
